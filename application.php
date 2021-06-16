@@ -55,9 +55,9 @@
           <li><a href="faq.php">FAQ</a></li>
           <li class="drop-down"><a href="">Sitemap</a>
             <ul>
-              <li><a href="#">Sitemap 1</a></li>
-              <li><a href="#">Sitemap 2</a></li>
-              <li><a href="#">Sitemap 3</a></li>
+             <li><a href="appform.php">New Application</a></li>
+              <li><a href="check.php">Check Application Status</a></li>
+              <li><a href="faq.php">FAQ</a></li>
               <li><a href="#">Sitemap 4</a></li>
             </ul>
           </li>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="intro-info">
-        <h2>QUARANTINE <br> EXEMPTION <br> SYSTEM</h2>
+        <h2>HOME <br>SURVEILLANCE  <br> ORDER <br>SYSTEM</h2>
       </div>
 
     </div>
@@ -88,7 +88,7 @@
 
   <main id="main">
 
-
+<br>
 
    <!--==========================
       Application Section
@@ -96,14 +96,28 @@
 
 
    <section id="services" class="section-bg">
-      <div class="container">
+      <d iv class="container">
 
         <header class="section-header">
-          <h3>APPLICATION</h3>
+          <h3>APPLICATION FOR HOME SURVEILLANCE ORDER</h3>
         </header>
-        <div class="col-lg-6 content order-lg-1 order-2">
-        <a href="appform.php" class="btn btn-info" role="button">New Application</a>
-        <a href="#" class="btn btn-info" role="button">Check Status</a>
+        <br><br>
+        <div class="wow bounceInUp" align='center' data-wow-duration="1.4s">
+ 
+            <div class="box" style="width:400px">
+              <form action="/action_page.php"  >
+    <a href="appform.php" class="btn btn-primary">New Application</a><br><br>
+    <a href="check.php" class="btn btn-primary">Check Application Status</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+        <div align='center' >
+       
+  </div>
+  </div>
+  </div>
 
       </div>
     </section><!-- #application -->
