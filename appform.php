@@ -55,9 +55,9 @@
           <li><a href="faq.php">FAQ</a></li>
           <li class="drop-down"><a href="">Sitemap</a>
             <ul>
-              <li><a href="#">Sitemap 1</a></li>
-              <li><a href="#">Sitemap 2</a></li>
-              <li><a href="#">Sitemap 3</a></li>
+              <li><a href="appform.php">New Application</a></li>
+              <li><a href="check.php">Check Application Status</a></li>
+              <li><a href="faq.php">FAQ</a></li>
               <li><a href="#">Sitemap 4</a></li>
             </ul>
           </li>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="intro-info">
-        <h2>QUARANTINE <br> EXEMPTION <br> SYSTEM</h2>
+        <h2>HOME <br>SURVEILLANCE  <br> ORDER <br>SYSTEM</h2>
       </div>
 
     </div>
@@ -89,7 +89,7 @@
   <main id="main">
 
 
-
+<br>
    <!--==========================
       Application Section
     ============================-->
@@ -97,33 +97,40 @@
 
    <section id="services" class="section-bg">
       <div class="container">
-
+<?php
+ 
+if(isset($_GET['message'])){
+  echo "<div class='alert alert-success'>";
+  echo $_GET['message']."</div>";
+}
+?>  
         <header class="section-header">
         <h3>NEW APPLICATION FORM</h3>
         <p>* Required field</p>
         </header>
+        <br><br>
 
-  
-        <div class="form-group" action="/action_page.php">
+        <div class="form-group">
         <div class="row">
         <div class="col">
+        <form method="POST" action="saverecord.php">
         <label for="fname">* Full Name :</label>
         <input type="text" class="form-control" id="fname"  name="fname" required> <br>
 
-        <label for="fname">* Individual Entering Malaysia :</label>
+        <label for="pusname">* Individual Entering Malaysia :</label>
         <textarea class="form-control" rows="5" id="pusname" required></textarea> <br>
 
-        <label for="fname">Nationality :</label>
+        <label for="nationality">Nationality :</label>
         <input type="text" class="form-control" id="nationality" name="nationality"> <br>
 
-        <label for="fname">Type of Transportation :</label><br>
+        <label for="transportation">Type of Transportation :</label><br>
         <div class="custom-control custom-radio custom-control-inline">
         <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
         <label class="custom-control-label" for="customRadio">Land</label>
        </div>
        <div class="custom-control custom-radio custom-control-inline">
-       <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
-       <label class="custom-control-label" for="customRadio2">Sea</label>
+       <input type="radio" class="custom-control-input" id="customRadio1" name="example" value="customEx">
+       <label class="custom-control-label" for="customRadio1">Sea</label>
        </div>
        <div class="custom-control custom-radio custom-control-inline">
        <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
@@ -145,25 +152,26 @@
     <option>Others</option>
     </select> <br>
 
-       <label for="file">Upload Supporting Documents :</label>
-       <input type="file" class="form-control-file border">
-
+   
         </div>
 
         <div class="col">
-        <label for="IC">* Identification Card/Passport No. :</label>
+        <label for="ic">* Identification Card/Passport No. :</label>
        <input type="password" class="form-control" name="ic" required> <br>
 
-       <label for="IC">* Email Address :</label>
+       <label for="email">* Email Address :</label>
        <input type="email" class="form-control" name="email" required> <br>
 
-       <label for="fname">Country of Departure :</label>
+       <label for="country">Country of Departure :</label>
         <input type="text" class="form-control" id="country" name="country"> <br>
 
         <label for="phone">* Telephone No. :</label>
        <input type="phone" class="form-control" name="phone" required> <br>
 
-        <label for="fname">Vaccination Status :</label><br>
+       <label for="date">Date of Travelling  :</label>
+        <input type="text" class="form-control" id="date" name="date"> <br>
+
+        <label for="vaccin">Vaccination Status :</label><br>
         <div class="form-check">
        <label class="form-check-label">
        <input type="radio" class="form-check-input" name="optradio">Pfizer BioNTech/Comirnaty</label>
@@ -209,14 +217,20 @@
       <input type="radio" class="form-check-input" name="optradio">None</label>
       </div><br><br>
 
+       <label for="file">Upload Supporting Documents :</label>
+       <input type="file" class="form-control-file border"><br><br>
+
 
        </div>
        </div>
         </div>
-       
+       <div align='center'>
       <button type="button" class="btn btn-primary">Submit Application</button>
+      <a href="appform.php" button type="button" class="btn btn-primary">Reset Form</button></a>
 
       </div>
+      </div>
+    </form>
     </section><!-- #application -->
 
     <!--==========================
