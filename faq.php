@@ -55,9 +55,9 @@
           <li><a href="faq.php">FAQ</a></li>
           <li class="drop-down"><a href="">Sitemap</a>
             <ul>
-              <li><a href="#">Sitemap 1</a></li>
-              <li><a href="#">Sitemap 2</a></li>
-              <li><a href="#">Sitemap 3</a></li>
+              <li><a href="appform.php">New Application</a></li>
+              <li><a href="check.php">Check Application Status</a></li>
+              <li><a href="faq.php">FAQ</a></li>
               <li><a href="#">Sitemap 4</a></li>
             </ul>
           </li>
@@ -80,14 +80,14 @@
       </div>
 
       <div class="intro-info">
-        <h2>QUARANTINE <br> EXEMPTION <br> SYSTEM</h2>
+        <h2>HOME <br>SURVEILLANCE  <br> ORDER <br>SYSTEM</h2>
       </div>
 
     </div>
   </section><!-- #intro -->
 
   <main id="main">
-
+<br>
 
 
     <!--==========================
@@ -97,9 +97,9 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Frequently Asked Question (FAQ)</h3>
+          <h3>FREQUENTLY ASKED QUESTION (FAQ)</h3>
         </header>
-
+        <br><br>
         <div class="row">
 
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
