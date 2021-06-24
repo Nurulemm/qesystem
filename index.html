@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quarantine Exemption System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logokkm2.png" rel="icon">
+  <link href="assets/img/logokkm2.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Serenity - v2.2.1
+  * Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto" time datetime="YYYY-MM-DDThh:mm:ssTZD">
+        
+        <a href="index.html">
+          <b><img src="assets/img/logokkm1.png" alt="" class="img-fluid" > QUARANTINE EXEMPTION SYSTEM</a></b>
+         
+
+
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+
+          
+
+          <li><a href="#cta">Application</a></li>
+          <li><a href="#faqs">FAQ</a></li>
+          <li class="drop-down"><a href="#">Sitemap</a>
+            <ul>
+              <li><a href="contact.html">New Application Form</a></li>
+              <li><a href="team.html">Check Application Status</a></li>
+              <li><a href="index.html">FAQs</a></li>
+              <li><a href="team.html">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-end">
+          <div class="col-lg-11">
+            <div class="row justify-content-end">
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box py-5">
+                  <i class="icofont-simple-smile"></i>
+                  <span data-toggle="counter-up">65</span>
+                  <p>Approved Applications</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box py-5">
+                  <i class="icofont-document-folder"></i>
+                  <span data-toggle="counter-up">985</span>
+                  <p>Reviewed Applications </p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box pb-5 pt-0 pt-lg-5">
+                  <i class="icofont-plus"></i>
+                  <span data-toggle="counter-up">1200</span>
+                  <p>Total Applicants</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                <div class="count-box pb-5 pt-0 pt-lg-5">
+                  <i class="icofont-people"></i>
+                  <span data-toggle="counter-up">1500</span>
+                  <p>Visitors</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 video-box align-self-baseline">
+            <img src="assets/img/videobanner.png" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=oQGUuDzd0XE" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 pt-3 pt-lg-0 content">
+            <h3><u>Welcome to Quarantine Exemption System</h3></u>
+            <p class="font-italic">
+              Sila baca syarat-syarat umum dibawah sebelum membuat permohonan:
+            </p><br>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Permohonan hendaklah dibuat 2 minggu sebelum masuk Malaysia</li>
+              <li><i class="bx bx-check-double"></i> Dokumen yang diperlukan :</li><b>PCA/RGL :</b> PCA approval letter/ RGL work permit <br>
+              <b>Death/Emergency :</b> Death certificate<br>
+              <b>Diplomat : </b> Letter from embassy & My Travell Pass approval <br>
+              <b>Health Issue :</b> Latest medical report<br>
+              <b>Business Traveller :</b> MIDA<br><br>
+
+              <li><i class="bx bx-check-double"></i> Keputusan permohonan boleh disemak di button <b>Check Application Status</b></li>
+              <li><i class="bx bx-check-double"></i> Maklumat permohonan yang tidak lengkap akan ditolak serta merta</li>
+              <li><i class="bx bx-check-double"></i> Masa yang diambil oleh pihak kami untuk menyemak permohonan adalah 1-3 hari bekerja</li>
+              <li><i class="bx bx-check-double"></i> Elakkan menghantar permohonan yang sama berulang kali bagi mengelakkan permohonan ditolak</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="fade-in">
+
+        <div class="text-center">
+          <h3><u>Application for Home Surveillance Order</h3></u>
+
+       <div class="wow bounceInUp" align='center' data-wow-duration="1.4s">
+ 
+            <div class="box" style="width:400px">
+              <form action="/action_page.php"  >
+    <a href="contact.html" class="cta-btn">New Application</a><br><br>
+    <a href="team.html" class="cta-btn">Check Application Status</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+        <div align='center' >
+       
+  </div>
+  </div>
+  </div>
+    </section><!-- End Cta Section -->
+
+     <!-- FAQs Start -->
+            <div section id="faqs" class="faqs">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h3><u>Frequently Asked Question (FAQs)</h3></u><br>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion-1">
+                                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
+                                            Bagaimana prosedur untuk masuk ke Malaysia?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                                            Kita nak tahu siapa yang patut dikuarantin?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
+                                            Kita perlu Covid-19 test?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
+                                            Are there any requirement for travellers to Malaysia?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
+                                            Keadaan macam mana yang membolehkan kita kuarantin dirumah atau pendekkan kuarantin?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion-1">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="accordion-2">
+                                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
+                                            Adakah pengembara yang masuk ke Malaysia atas sebab kecemasan seperti kematian atau menghadiri pengebumian ahli keluarga terdekat perlu kuarantin?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.2s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
+                                            Bagaimanakah unuk memohon pengecualian kuarantin dari Pusat Kuarantin?
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
+                                            Apakah kriteria yang ditetapkan untuk memohon pengcualian kuarantin di Pusat Kuarantin?
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.4s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
+                                            Berapa lama untuk dapatkan keputusan permohonan?
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInRight" data-wow-delay="0.5s">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
+                                            Adakah rayuan boleh dibuat sekiranya permohonan gagal?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" data-parent="#accordion-2">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+               Kompleks E, Blok E10, <br>
+              Pusat Pentadbiran Kerajaan Persekutuan, <br>
+            62590, 62000 Putrajaya, Wilayah Persekutuan Putrajaya<br>
+              <strong>Phone:</strong>  03-8000 8000<br>
+              <strong>Email:</strong> hso@kkm.gov.my<br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/KKMPutrajaya" class="twitter"><i class="icofont-twitter"></i></a>
+              <a href="https://www.facebook.com/kementeriankesihatanmalaysia" class="facebook"><i class="icofont-facebook"></i></a>
+              <a href="https://www.instagram.com/kementeriankesihatanmalaysia/" class="instagram"><i class="icofont-instagram"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-newsletter">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15938.123247401629!2d101.69610202675764!3d2.9500853656219497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d2.9452363999999998!2d101.6957156!4m5!1s0x31cdb625448e0bb1%3A0xee2956c5b3275929!2skkm!3m2!1d2.9425836!2d101.7072263!5e0!3m2!1sen!2smy!4v1623381022951!5m2!1sen!2smy" frameborder="5" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kementerian Kesihatan Malaysia</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
